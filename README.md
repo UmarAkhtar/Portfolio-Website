@@ -1,2 +1,2 @@
 # Portfolio-Website
-A repository that will grow alongside my learning journey and eventually become my portfolio website.
+A repository that will grow alongside my learning journey and eventually become my portfolio website. Learning HTML, CSS, JS and Node
