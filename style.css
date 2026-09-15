@@ -2,6 +2,27 @@
     color: purple;
 }
 
-.projects {
-    color:blue
+.body {
+    background-color: #182a42;
+    font-family: comic sans ms;
+    margin: 0;
+    padding: 20px;
+}
+
+.body .header {
+    color: #f0f0f0;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.body .preview {
+    color: #777558;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.body .list-item {
+    color: #777558;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
