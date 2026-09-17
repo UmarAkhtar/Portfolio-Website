@@ -7,9 +7,14 @@
     src: url(./fonts/Spidey.ttf);
 }
 
+@font-face {
+    font-family: 'Google Sans';
+    src: url(./fonts/Google_Sans/GoogleSans.ttf);
+}
+
 .body {
     background-color: #311b20;
-    font-family: comic sans ms;
+    font-family: 'Google Sans';
     margin: 0;
     padding: 20px;
     text-align: justify;
@@ -17,8 +22,6 @@
 
 .body .header {
     background-color: #164674;
-    font-family: Spidey;
-    font-size: small;
     color: #f0f0f0;
     font-size: 24px;
     margin-bottom: 10px;
@@ -39,7 +42,10 @@
 }
 
 .body .name {
+    
     background-color: #167423;
+    font-family: Spidey;
+    font-size: small;
     color: #ff0000;
     font-size: 20px;
     font-weight: bold;
