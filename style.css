@@ -1,12 +1,6 @@
 
-html {
-    scroll-behavior: smooth;
-    background-color: burlywood;
-}
 
-body {
-    margin: 0;
-}
+
 @font-face {
     font-family: 'Spidey';
     src: url(./fonts/Spidey.ttf);
@@ -17,72 +11,106 @@ body {
     src: url(./fonts/Google_Sans/GoogleSans.ttf);
 }
 
-.body .flex-container {
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Google Sans', sans-serif;
+}
+
+body .flex-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
    
 }
 
-.body .flex-container .nav-bar {
+.nav-bar {
     display: flex;
+    font-family: 'Google Sans', sans-serif;
     min-height: 30px;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-   
+    background: rgb(15, 20, 46);
 }
 
-.body .flex-container .title-section {
+.nav-bar .nav-item {
+    color: #f7f7f7;
+}
+
+.title-section {
     display: flex;
     flex: 1;
     justify-content: left; 
     align-items: center; 
-    height: 100px;    
     flex-direction: row;
-    background: rgb(88, 50, 0);
+    background: rgb(27, 37, 92);
   
 }
 
-.body .flex-container .title-section .title-content {
+.title-content {
   display: flex;
-  background-color: black;
   padding: 10px;        
   flex-direction: column;
 }
 
-.body .flex-container .title-section .title-content .title {
+.title-content h1 {
     font-family: 'Spidey', sans-serif;
-    background-color: blue;
     color: #f7f7f7;
     text-align: start;
     font-size: 1.5rem;
-    margin: 0 auto;
-    flex-basis: 100%;
-
+    margin-left: auto;
 }
 
-.body .flex-container .title-section .title-content .subtitle {
+.title-content p {
     font-family: 'Google Sans', sans-serif;
-    background-color: red;
     color: #f7f7f7;
     text-align: center;
     font-size: 1rem;
     margin: 0 auto;
-    flex-basis: 100%;
-
 }
 
-.body .flex-container .project-section {
+.title-section .profile-image {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  
+}
+.project-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     flex: 1;
-    background: rgb(1, 5, 255);
+    background: rgb(41, 50, 100);
   
 }
 
-.body .flex-container .contact-section {
+.project-section .project {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(0, 38, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-section {
     flex: 1;
-    background: rgb(255, 145, 1);
-  
+    background: rgb(27, 37, 92);
 }
 
 
