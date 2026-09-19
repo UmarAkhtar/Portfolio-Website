@@ -1,4 +1,6 @@
-
+html {
+    background-color: rgb(15, 20, 46);
+}
 
 
 @font-face {
@@ -71,11 +73,15 @@ body .flex-container {
 }
 
 .title-section .profile-image {
-    width: 10px;
-    height: 10px;
+    width: 200px;
+    height: 200px;
+    margin-left: 300px;
+    margin-bottom: 70px;
     opacity: 1;
   
 }
+
+
 .project-section {
     display: flex;
     flex-direction: row;
@@ -86,8 +92,43 @@ body .flex-container {
   
 }
 
-.project-section .project {
+.project-section .project1 {
     display: flex;
+    flex: 1;
+    min-width: 0;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(0, 38, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-section h2{
+    font-family: 'Google Sans', sans-serif;
+}
+
+.project-section p{
+    font-family: 'Google Sans', sans-serif;
+}
+
+.project-section .project2 {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(0, 38, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-section .project3 {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    flex-direction: column;
     margin: 20px;
     padding: 20px;
     background-color: rgb(0, 38, 255);
@@ -109,11 +150,45 @@ body .flex-container {
 
 
 .contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex: 1;
-    background: rgb(27, 37, 92);
+    background: rgb(35, 48, 109);
+}
+
+.contact-section .email{
+    background-color: rgb(80, 78, 196);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.contact-section .email button{
+    background-color:rgb(37, 53, 136);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Google Sans', sans-serif;
+    padding: 15px 32px;
+}
+
+.contact-section .mobile-number{
+    background-color: rgb(80, 78, 196);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.contact-section .mobile-number button{
+    background-color:rgb(37, 53, 136);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Google Sans', sans-serif;
+    padding: 15px 32px;
 }
 
 
 footer {
     color: #f7f7f7;
+    
 }
