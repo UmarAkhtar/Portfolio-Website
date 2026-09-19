@@ -18,6 +18,8 @@
     margin: 0;
     padding: 20px;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -27,6 +29,7 @@
     font-size: 24px;
     margin-bottom: 10px;
     box-shadow: 5px 10px rgba(0, 0, 0, .5);
+    flex: auto;
     
 }
 
@@ -34,13 +37,14 @@
     color: #777558;
     font-size: 16px;
     margin-bottom: 20px;
-
+    flex: auto;
 }
 
 .body .list-item {
     color: #777558;
     font-size: 16px;
     margin-bottom: 20px;
+    flex: auto;
 }
 
 .body .name {
@@ -51,15 +55,29 @@
     color: #ff0000;
     font-size: 20px;
     font-weight: bold;
+    flex: auto;
 }
 
 .body .flex-container {
+  height: 140px;
+  padding: 16px;
+  background: plum;
+  border: 4px solid indigo;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .body .flex-container div {
-  background: peachpuff;
-  border: 4px solid brown;
-  height: 100px;
-  flex: 1;
+ width: 60px;
+  height: 60px;
+  border: 4px solid darkslategray;
+  background: skyblue;
+
+}
+
+footer {
+    color: #f7f7f7;
 }
