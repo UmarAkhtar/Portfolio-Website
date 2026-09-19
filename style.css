@@ -22,12 +22,14 @@ body{
 body .flex-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+   
    
 }
 
 .nav-bar {
     display: flex;
+    position: sticky;
+    top: 0;
     font-family: 'Google Sans', sans-serif;
     min-height: 30px;
     align-items: center;
@@ -36,9 +38,10 @@ body .flex-container {
     background: rgb(15, 20, 46);
 }
 
-.nav-bar .nav-item {
+.nav-bar .nav-item a{
     color: #f7f7f7;
 }
+
 
 .title-section {
     display: flex;
@@ -47,6 +50,7 @@ body .flex-container {
     align-items: center; 
     flex-direction: row;
     background: rgb(27, 37, 92);
+    min-height: 70vh;
   
 }
 
@@ -89,6 +93,7 @@ body .flex-container {
     align-items: center;
     flex: 1;
     background: rgb(41, 50, 100);
+    min-height: 70vh;
   
 }
 
@@ -155,6 +160,7 @@ body .flex-container {
     align-items: center;
     flex: 1;
     background: rgb(35, 48, 109);
+    min-height: 70vh;
 }
 
 .contact-section .email{
