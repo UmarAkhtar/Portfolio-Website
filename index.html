@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umar Akhtar - Portfolio</title>
+    <meta name="description" content="Portfolio of Umar Akhtar, web developer and designer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="#home">UA</a>
+
+            <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav__menu" id="navMenu" aria-label="Main">
+                <a class="nav__link" href="#home">Home</a>
+                <a class="nav__link" href="#projects">Projects</a>
+                <a class="nav__link" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__text reveal">
+                <p class="hero__eyebrow">Hello, I'm</p>
+                <h1 class="hero__title">Umar Akhtar</h1>
+                <p class="hero__subtitle">Web Developer &middot; Programmer &middot; Designer</p>
+                <p class="hero__blurb">
+                    I build clean, responsive websites and I'm currently deepening my
+                    front-end skills through The Odin Project.
+                </p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="#projects">View my work</a>
+                    <a class="btn btn--ghost" href="#contact">Get in touch</a>
+                </div>
+            </div>
+
+            <div class="hero__media reveal">
+                <div class="hero__glow" aria-hidden="true"></div>
+                <img class="hero__image" src="images/profile.png" alt="Portrait of Umar Akhtar">
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="section__head reveal">
+                <h2 class="section__title">Projects</h2>
+                <p class="section__lead">A few things I'm building as I learn.</p>
+            </div>
+
+            <div class="cards">
+                <article class="card reveal">
+                    <div class="card__media">
+                        <img src="images/placeholder.svg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Project One</h3>
+                        <p class="card__text">
+                            A short description of what this project does, what problem it
+                            solves, and what you learned building it.
+                        </p>
+                        <ul class="card__tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <a class="card__link" href="#">View project <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <div class="card__media">
+                        <img src="images/placeholder.svg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Project Two</h3>
+                        <p class="card__text">
+                            A short description of what this project does, what problem it
+                            solves, and what you learned building it.
+                        </p>
+                        <ul class="card__tags">
+                            <li>JavaScript</li>
+                            <li>Flexbox</li>
+                        </ul>
+                        <a class="card__link" href="#">View project <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="card reveal">
+                    <div class="card__media">
+                        <img src="images/placeholder.svg" alt="">
+                    </div>
+                    <div class="card__body">
+                        <h3 class="card__title">Project Three</h3>
+                        <p class="card__text">
+                            A short description of what this project does, what problem it
+                            solves, and what you learned building it.
+                        </p>
+                        <ul class="card__tags">
+                            <li>Node</li>
+                            <li>API</li>
+                        </ul>
+                        <a class="card__link" href="#">View project <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="section__head reveal">
+                <h2 class="section__title">Contact</h2>
+                <p class="section__lead">The best ways to reach me.</p>
+            </div>
+
+            <div class="contact reveal">
+                <div class="contact__item">
+                    <span class="contact__label">Email</span>
+                    <span class="contact__value" id="contactEmail">your.email@example.com</span>
+                    <button class="btn btn--small" data-copy="contactEmail">Copy</button>
+                </div>
+
+                <div class="contact__item">
+                    <span class="contact__label">Phone</span>
+                    <span class="contact__value" id="contactPhone">+44 0000 000000</span>
+                    <button class="btn btn--small" data-copy="contactPhone">Copy</button>
+                </div>
+
+                <div class="contact__item">
+                    <span class="contact__label">GitHub</span>
+                    <span class="contact__value" id="contactGithub">github.com/username</span>
+                    <button class="btn btn--small" data-copy="contactGithub">Copy</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 Umar Akhtar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

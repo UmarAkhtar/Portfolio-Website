@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="Project image placeholder">
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#1b2340"/>
+            <stop offset="1" stop-color="#0d1322"/>
+        </linearGradient>
+    </defs>
+    <rect width="640" height="400" fill="url(#bg)"/>
+    <g fill="none" stroke="#3a4772" stroke-width="3">
+        <rect x="210" y="132" width="220" height="150" rx="12"/>
+        <path d="M210 246l58-52 44 38 40-34 78 66"/>
+    </g>
+    <circle cx="282" cy="176" r="15" fill="#6d7cff"/>
+    <text x="320" y="326" fill="#7b88b3" font-family="system-ui, sans-serif" font-size="20" text-anchor="middle">Project image</text>
+</svg>
