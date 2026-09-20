@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Two - Umar Akhtar</title>
+    <meta name="description" content="A closer look at Project Two by Umar Akhtar.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="index.html">UA</a>
+
+            <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav__menu" id="navMenu" aria-label="Main">
+                <a class="nav__link" href="index.html#home">Home</a>
+                <a class="nav__link is-active" href="index.html#projects">Projects</a>
+                <a class="nav__link" href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="project-hero">
+            <a class="back-link" href="index.html#projects"><span aria-hidden="true">&larr;</span> All projects</a>
+            <p class="project-hero__eyebrow">Project 02</p>
+            <h1 class="project-hero__title">Project Two</h1>
+            <p class="project-hero__lead">
+                A one or two sentence summary of what this project is and who it is for.
+                Replace this with your own description.
+            </p>
+            <ul class="card__tags">
+                <li>JavaScript</li>
+                <li>Flexbox</li>
+            </ul>
+            <div class="project-hero__actions">
+                <a class="btn btn--primary" href="#">Live demo</a>
+                <a class="btn btn--ghost" href="#">Source code</a>
+            </div>
+        </section>
+
+        <figure class="project-shot reveal">
+            <img src="images/placeholder.svg" alt="Screenshot of Project Two">
+            <figcaption>Replace this with a screenshot of the finished project.</figcaption>
+        </figure>
+
+        <div class="project-body">
+            <article class="project-main reveal">
+                <h2>Overview</h2>
+                <p>
+                    Explain the goal of the project and the problem it solves. Mention what
+                    prompted you to build it and anything that shaped the approach.
+                </p>
+
+                <h2>Features</h2>
+                <ul class="project-list">
+                    <li>First notable feature of the project.</li>
+                    <li>Second notable feature of the project.</li>
+                    <li>Third notable feature of the project.</li>
+                </ul>
+
+                <h2>What I learned</h2>
+                <p>
+                    Write about the parts that were tricky, what you would do differently
+                    next time, and the concepts this project taught you.
+                </p>
+            </article>
+
+            <aside class="project-meta reveal">
+                <div class="project-meta__row">
+                    <span class="project-meta__label">Role</span>
+                    <span>Design and build</span>
+                </div>
+                <div class="project-meta__row">
+                    <span class="project-meta__label">Timeline</span>
+                    <span>Add a date or duration</span>
+                </div>
+                <div class="project-meta__row">
+                    <span class="project-meta__label">Built with</span>
+                    <span>JavaScript, Flexbox</span>
+                </div>
+                <div class="project-meta__row">
+                    <span class="project-meta__label">Status</span>
+                    <span>In progress</span>
+                </div>
+            </aside>
+        </div>
+
+        <nav class="project-pager" aria-label="Project navigation">
+            <a class="project-pager__prev" href="project-one.html">
+                Previous project
+                <strong><span aria-hidden="true">&larr;</span> Project One</strong>
+            </a>
+            <a class="project-pager__next" href="project-three.html">
+                Next project
+                <strong>Project Three <span aria-hidden="true">&rarr;</span></strong>
+            </a>
+        </nav>
+    </main>
+
+    <footer class="footer">
+        <p>Copyright &copy; 2026 Umar Akhtar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
