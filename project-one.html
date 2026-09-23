@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project One - Umar Akhtar</title>
-    <meta name="description" content="A closer look at Project One by Umar Akhtar.">
+    <title>First Portfolio Site - Umar Akhtar</title>
+    <meta name="description" content="The first version of Umar Akhtar's portfolio, built while learning HTML and CSS.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -33,45 +33,61 @@
         <section class="project-hero">
             <a class="back-link" href="index.html#projects"><span aria-hidden="true">&larr;</span> All projects</a>
             <p class="project-hero__eyebrow">Project 01</p>
-            <h1 class="project-hero__title">Project One</h1>
+            <h1 class="project-hero__title">First Portfolio Site</h1>
             <p class="project-hero__lead">
-                A one or two sentence summary of what this project is and who it is for.
-                Replace this with your own description.
+                The first version of this portfolio, hand built while working through the
+                HTML and CSS lessons on The Odin Project. It is kept online unchanged as a
+                snapshot of where I started.
             </p>
             <ul class="card__tags">
                 <li>HTML</li>
                 <li>CSS</li>
+                <li>Flexbox</li>
             </ul>
             <div class="project-hero__actions">
-                <a class="btn btn--primary" href="#">Live demo</a>
-                <a class="btn btn--ghost" href="#">Source code</a>
+                <a class="btn btn--primary" href="archive/v1/index.html">Open the live site</a>
+                <a class="btn btn--ghost" href="https://github.com/UmarAkhtar/Portfolio-Website/tree/old-portfolio" target="_blank" rel="noreferrer">Source code</a>
             </div>
         </section>
 
         <figure class="project-shot reveal">
-            <img src="images/placeholder.svg" alt="Screenshot of Project One">
-            <figcaption>Replace this with a screenshot of the finished project.</figcaption>
+            <div class="project-shot__frame">
+                <iframe src="archive/v1/index.html" title="Live preview of the first portfolio site" loading="lazy" scrolling="no"></iframe>
+                <a class="project-shot__cover" href="archive/v1/index.html" aria-label="Open the first portfolio site"></a>
+            </div>
+            <figcaption>A live preview of the original site. Click it to open the full page.</figcaption>
         </figure>
 
         <div class="project-body">
             <article class="project-main reveal">
                 <h2>Overview</h2>
                 <p>
-                    Explain the goal of the project and the problem it solves. Mention what
-                    prompted you to build it and anything that shaped the approach.
+                    I started this as a place to practise everything I was picking up from
+                    The Odin Project, beginning with plain headings and lists and slowly
+                    turning it into a full page with a navigation bar, project cards and a
+                    contact section. Every layout decision was made with flexbox, since that
+                    was the part I most wanted to understand.
                 </p>
 
                 <h2>Features</h2>
                 <ul class="project-list">
-                    <li>First notable feature of the project.</li>
-                    <li>Second notable feature of the project.</li>
-                    <li>Third notable feature of the project.</li>
+                    <li>Sticky navigation bar linking to each section, with smooth scrolling.</li>
+                    <li>Full height sections laid out with nested flex containers.</li>
+                    <li>Custom fonts loaded from the project with @font-face.</li>
+                    <li>Project and contact cards built as reusable blocks.</li>
                 </ul>
 
                 <h2>What I learned</h2>
                 <p>
-                    Write about the parts that were tricky, what you would do differently
-                    next time, and the concepts this project taught you.
+                    Flexbox finally clicked here, in particular how a container and its items
+                    share out space. I also learned the hard way that long selector chains
+                    like .body .flex-container .title-section .title-content become difficult
+                    to override, which is why the current site uses short class names instead.
+                </p>
+                <p>
+                    Deploying it taught me the rest: relative asset paths, why file name
+                    casing matters on a live server even when it does not on Windows, and how
+                    to use git branches so an old version can stay online while I rebuild.
                 </p>
             </article>
 
@@ -82,15 +98,15 @@
                 </div>
                 <div class="project-meta__row">
                     <span class="project-meta__label">Timeline</span>
-                    <span>Add a date or duration</span>
+                    <span>September 2026</span>
                 </div>
                 <div class="project-meta__row">
                     <span class="project-meta__label">Built with</span>
-                    <span>HTML, CSS</span>
+                    <span>HTML, CSS, Flexbox</span>
                 </div>
                 <div class="project-meta__row">
                     <span class="project-meta__label">Status</span>
-                    <span>In progress</span>
+                    <span>Archived</span>
                 </div>
             </aside>
         </div>
