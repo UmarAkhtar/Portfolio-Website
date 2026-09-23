@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umar Akhtar - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exit-bar.css">
 </head>
 
 
 <body class="body">
+
+    <a class="exit-demo" href="../../project-one.html"><span aria-hidden="true">&larr;</span> Exit demo</a>
 
     <script src="script.js"></script>
 
@@ -92,6 +95,12 @@
     <footer>
             <p>Copyright &copy; 2026 Umar Akhtar</p>
          </footer>
+
+    <script>
+        if (window.self !== window.top) {
+            document.querySelector('.exit-demo').remove();
+        }
+    </script>
 </body>
 
 

@@ -1,0 +1,37 @@
+.exit-demo {
+    position: fixed;
+    left: 18px;
+    bottom: 18px;
+    z-index: 9999;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    border-radius: 999px;
+    border: 1px solid #253052;
+    background: rgba(11, 15, 26, 0.92);
+    backdrop-filter: blur(8px);
+    color: #eef2ff;
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.exit-demo:hover,
+.exit-demo:focus-visible {
+    transform: translateY(-2px);
+    border-color: #6d7cff;
+    background: rgba(17, 23, 40, 0.96);
+}
+
+@media (max-width: 520px) {
+    .exit-demo {
+        left: 12px;
+        bottom: 12px;
+        padding: 9px 16px;
+        font-size: 0.8rem;
+    }
+}
