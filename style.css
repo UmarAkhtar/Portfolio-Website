@@ -304,6 +304,56 @@ img {
     margin: 10px 0 0;
 }
 
+/* About */
+.about {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: clamp(28px, 4vw, 52px);
+    align-items: start;
+}
+
+.about__text p {
+    color: var(--muted);
+    margin: 0 0 16px;
+    max-width: 62ch;
+}
+
+.about__text p:last-child {
+    margin-bottom: 0;
+}
+
+.about__facts {
+    display: grid;
+    gap: 2px;
+    margin: 0;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 8px;
+}
+
+.about__facts > div {
+    padding: 13px 16px;
+    border-radius: 10px;
+}
+
+.about__facts > div:hover {
+    background: rgba(109, 124, 255, 0.08);
+}
+
+.about__facts dt {
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.about__facts dd {
+    margin: 4px 0 0;
+    font-weight: 500;
+}
+
 /* Project cards */
 .cards {
     display: grid;
@@ -719,6 +769,10 @@ img {
 
     .nav__link {
         padding: 12px 14px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
     }
 
     .project-body {
