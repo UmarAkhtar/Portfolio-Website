@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Three - Umar Akhtar</title>
-    <meta name="description" content="A closer look at Project Three by Umar Akhtar.">
+    <title>AI Support Triage - Umar Akhtar</title>
+    <meta name="description" content="A support triage tool that sorts customer messages by urgency and drafts replies for a human to approve. Planned project by Umar Akhtar.">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +25,7 @@
             <nav class="nav__menu" id="navMenu" aria-label="Main">
                 <a class="nav__link" href="index.html#home">Home</a>
                 <a class="nav__link" href="index.html#about">About</a>
+                <a class="nav__link" href="index.html#skills">Skills</a>
                 <a class="nav__link is-active" href="index.html#projects">Projects</a>
                 <a class="nav__link" href="index.html#contact">Contact</a>
             </nav>
@@ -35,45 +36,77 @@
         <section class="project-hero">
             <a class="back-link" href="index.html#projects"><span aria-hidden="true">&larr;</span> All projects</a>
             <p class="project-hero__eyebrow">Project 03</p>
-            <h1 class="project-hero__title">Project Three</h1>
+            <h1 class="project-hero__title">AI Support Triage</h1>
             <p class="project-hero__lead">
-                A one or two sentence summary of what this project is and who it is for.
-                Replace this with your own description.
+                A tool for the job I used to do. I handled first line support at Santander,
+                taking 50+ calls and queries a day, so this is the thing I wished had been
+                sitting next to me.
             </p>
             <ul class="card__tags">
-                <li>Node</li>
-                <li>API</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>Claude API</li>
             </ul>
-            <div class="project-hero__actions">
-                <a class="btn btn--primary" href="#">Live demo</a>
-                <a class="btn btn--ghost" href="#">Source code</a>
+
+            <div class="status-note">
+                <span class="status-note__dot status-note__dot--planned" aria-hidden="true"></span>
+                <p>
+                    <strong>Planned.</strong> This one is scheduled after the Takeaway Manager
+                    is finished. Nothing has been built yet, and this page describes what I
+                    intend to make.
+                </p>
             </div>
         </section>
 
-        <figure class="project-shot reveal">
-            <img src="images/placeholder.svg" alt="Screenshot of Project Three">
-            <figcaption>Replace this with a screenshot of the finished project.</figcaption>
-        </figure>
-
         <div class="project-body">
             <article class="project-main reveal">
-                <h2>Overview</h2>
+                <h2>Why this project</h2>
                 <p>
-                    Explain the goal of the project and the problem it solves. Mention what
-                    prompted you to build it and anything that shaped the approach.
+                    The slow part of first line support was never writing the answer. It was
+                    everything before that: reading a queue of messages, working out which
+                    ones were genuinely urgent, deciding what each one was actually about, and
+                    starting the same handful of replies over and over.
+                </p>
+                <p>
+                    That is sorting and drafting work, and it is the kind of thing software
+                    can take a first pass at. The judgement of whether the answer is right
+                    still belongs to a person.
                 </p>
 
-                <h2>Features</h2>
+                <h2>What it will do</h2>
                 <ul class="project-list">
-                    <li>First notable feature of the project.</li>
-                    <li>Second notable feature of the project.</li>
-                    <li>Third notable feature of the project.</li>
+                    <li><strong>Sort by urgency</strong> &mdash; so the queue arrives in the order it should be worked.</li>
+                    <li><strong>Categorise by type</strong> &mdash; billing, access, technical fault, complaint.</li>
+                    <li><strong>Draft a suggested reply</strong> &mdash; a starting point, not a finished answer.</li>
+                    <li><strong>Wait for a human</strong> &mdash; every draft is approved or edited by a person before it goes anywhere.</li>
                 </ul>
 
-                <h2>What I learned</h2>
+                <h2>How I'm building it</h2>
                 <p>
-                    Write about the parts that were tricky, what you would do differently
-                    next time, and the concepts this project taught you.
+                    Same process as my other work: every requirement written as an issue with
+                    a definition of done, a branch and pull request per feature, and tests
+                    running automatically before anything merges.
+                </p>
+                <p>
+                    The new part is calling a language model from my own code rather than
+                    using one as a tool while I work. That means the model call lives on a
+                    server I control, not in the browser, because the API key has to stay
+                    private.
+                </p>
+
+                <h2>Decisions made up front</h2>
+                <p>
+                    <strong>Nothing sends by itself.</strong> The model drafts, a person
+                    approves. A tool that emails customers automatically is a tool that can
+                    embarrass you automatically, and in a support setting that matters more
+                    than the time it saves.
+                </p>
+                <p>
+                    <strong>The API key never enters the repository.</strong> It lives in an
+                    environment variable locally and in the host's secret storage when
+                    deployed, with the <code>.env</code> file listed in
+                    <code>.gitignore</code> from the very first commit.
                 </p>
             </article>
 
@@ -83,16 +116,16 @@
                     <span>Design and build</span>
                 </div>
                 <div class="project-meta__row">
-                    <span class="project-meta__label">Timeline</span>
-                    <span>Add a date or duration</span>
+                    <span class="project-meta__label">Planned for</span>
+                    <span>After the Takeaway Manager</span>
                 </div>
                 <div class="project-meta__row">
                     <span class="project-meta__label">Built with</span>
-                    <span>Node, API</span>
+                    <span>JavaScript, Node.js, Express.js, Claude API</span>
                 </div>
                 <div class="project-meta__row">
                     <span class="project-meta__label">Status</span>
-                    <span>In progress</span>
+                    <span>Not started</span>
                 </div>
             </aside>
         </div>
@@ -100,7 +133,7 @@
         <nav class="project-pager" aria-label="Project navigation">
             <a class="project-pager__prev" href="project-two.html">
                 Previous project
-                <strong><span aria-hidden="true">&larr;</span> Project Two</strong>
+                <strong><span aria-hidden="true">&larr;</span> Takeaway Manager</strong>
             </a>
             <span></span>
         </nav>
