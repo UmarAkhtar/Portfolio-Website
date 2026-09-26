@@ -354,6 +354,109 @@ img {
     font-weight: 500;
 }
 
+/* Experience timeline */
+.timeline {
+    margin-top: clamp(36px, 5vw, 56px);
+}
+
+.timeline__title {
+    font-size: 1.15rem;
+    margin: 0 0 22px;
+}
+
+.timeline__list {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 26px;
+}
+
+.timeline__list::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    bottom: 7px;
+    width: 1px;
+    background: var(--border);
+}
+
+.timeline__item {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.timeline__item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline__item::before {
+    content: "";
+    position: absolute;
+    left: -26px;
+    top: 6px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--border);
+    box-shadow: 0 0 0 3px var(--bg);
+}
+
+.timeline__item--tech::before {
+    background: var(--accent-2);
+}
+
+.timeline__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 14px;
+}
+
+.timeline__role {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.timeline__dates {
+    color: var(--muted);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.timeline__detail {
+    color: var(--muted);
+    font-size: 0.93rem;
+    margin: 3px 0 0;
+    max-width: 62ch;
+}
+
+.timeline__legend {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 22px 0 0;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.timeline__key {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--border);
+}
+
+.timeline__key--tech {
+    background: var(--accent-2);
+}
+
+.timeline__legend .timeline__key:not(.timeline__key--tech) {
+    margin-left: 12px;
+}
+
 /* Project cards */
 .cards {
     display: grid;
