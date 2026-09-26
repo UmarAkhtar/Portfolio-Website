@@ -166,6 +166,28 @@ img {
     min-height: calc(100vh - var(--nav-height));
 }
 
+.availability {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin: 0 0 20px;
+    padding: 7px 15px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--bg-soft);
+    color: var(--text);
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
+.availability__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-2);
+    box-shadow: 0 0 0 3px rgba(55, 214, 214, 0.18);
+}
+
 .hero__eyebrow {
     color: var(--accent-2);
     font-weight: 600;
