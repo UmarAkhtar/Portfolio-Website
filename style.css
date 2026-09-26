@@ -479,6 +479,54 @@ img {
     margin-left: 12px;
 }
 
+/* Skills */
+.skills {
+    display: grid;
+    gap: 26px;
+}
+
+.skills__label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 12px;
+}
+
+.skills__group--current .skills__label {
+    color: var(--accent-2);
+}
+
+.skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills__list li {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 7px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.skills__group--current .skills__list li {
+    color: var(--accent-2);
+    background: rgba(55, 214, 214, 0.1);
+    border-color: rgba(55, 214, 214, 0.3);
+}
+
+.skills__group--past .skills__list li {
+    color: var(--muted);
+}
+
 /* Project cards */
 .cards {
     display: grid;
