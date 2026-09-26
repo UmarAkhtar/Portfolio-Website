@@ -8,10 +8,6 @@ html {
     src: url(./fonts/Spidey.ttf);
 }
 
-@font-face {
-    font-family: 'Google Sans';
-    src: url(./fonts/Google_Sans/GoogleSans.ttf);
-}
 
 body{
     margin: 0;
