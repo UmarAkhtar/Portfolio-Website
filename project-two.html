@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Two - Umar Akhtar</title>
-    <meta name="description" content="A closer look at Project Two by Umar Akhtar.">
+    <title>Takeaway Manager - Umar Akhtar</title>
+    <meta name="description" content="An order and sales app for a fast food shop, currently in development by Umar Akhtar.">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,45 +35,74 @@
         <section class="project-hero">
             <a class="back-link" href="index.html#projects"><span aria-hidden="true">&larr;</span> All projects</a>
             <p class="project-hero__eyebrow">Project 02</p>
-            <h1 class="project-hero__title">Project Two</h1>
+            <h1 class="project-hero__title">Takeaway Manager</h1>
             <p class="project-hero__lead">
-                A one or two sentence summary of what this project is and who it is for.
-                Replace this with your own description.
+                An order and sales app for a fast food shop, built around a job I actually
+                did. I managed my family's takeaway for eight months, so this is a problem
+                I understand from behind the counter rather than one I read about.
             </p>
             <ul class="card__tags">
+                <li>HTML</li>
+                <li>CSS</li>
                 <li>JavaScript</li>
-                <li>Flexbox</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
             </ul>
-            <div class="project-hero__actions">
-                <a class="btn btn--primary" href="#">Live demo</a>
-                <a class="btn btn--ghost" href="#">Source code</a>
+
+            <div class="status-note">
+                <span class="status-note__dot" aria-hidden="true"></span>
+                <p>
+                    <strong>In development.</strong> A live demo and source code link will
+                    appear here once the first version is deployed.
+                </p>
             </div>
         </section>
 
-        <figure class="project-shot reveal">
-            <img src="images/placeholder.svg" alt="Screenshot of Project Two">
-            <figcaption>Replace this with a screenshot of the finished project.</figcaption>
-        </figure>
-
         <div class="project-body">
             <article class="project-main reveal">
-                <h2>Overview</h2>
+                <h2>Why this project</h2>
                 <p>
-                    Explain the goal of the project and the problem it solves. Mention what
-                    prompted you to build it and anything that shaped the approach.
+                    Running the shop, the parts that cost the most time were the ones a
+                    computer should have been doing: keeping the menu and its prices straight,
+                    getting an order to the kitchen without it being misread, knowing which
+                    orders were still outstanding at a glance, and working out what the day
+                    had actually taken.
+                </p>
+                <p>
+                    Most beginner portfolios are full of weather apps and to-do lists. This is
+                    the opposite of that. I know what the job needs because I did the job, and
+                    that is the part I could not have got from a tutorial.
                 </p>
 
-                <h2>Features</h2>
+                <h2>What it will do</h2>
                 <ul class="project-list">
-                    <li>First notable feature of the project.</li>
-                    <li>Second notable feature of the project.</li>
-                    <li>Third notable feature of the project.</li>
+                    <li><strong>Menu management</strong> &mdash; add items, change prices, and retire items without breaking past orders.</li>
+                    <li><strong>Order entry</strong> &mdash; build an order by tapping menu items, with quantities and a running total.</li>
+                    <li><strong>Kitchen board</strong> &mdash; outstanding orders shown oldest first, marked off as they go out.</li>
+                    <li><strong>End of day takings</strong> &mdash; order count, gross total, and the best selling item.</li>
                 </ul>
 
-                <h2>What I learned</h2>
+                <h2>How I'm building it</h2>
                 <p>
-                    Write about the parts that were tricky, what you would do differently
-                    next time, and the concepts this project taught you.
+                    The process matters to me as much as the app. Every requirement starts as
+                    a written issue with a definition of done, each feature gets its own branch
+                    and pull request, and tests run automatically on every push before anything
+                    merges.
+                </p>
+                <p>
+                    I'm building it in vertical slices, meaning one feature goes all the way
+                    from the database to the screen before the next one starts, rather than
+                    building a whole back end and hoping it fits the front end later. The rule
+                    I've set myself is that I don't merge code I can't explain out loud.
+                </p>
+
+                <h2>Decisions made up front</h2>
+                <p>
+                    Two came straight from the shop floor. Money is stored in whole pence
+                    rather than decimals, because rounding errors in a till are real money. And
+                    an order stores a copy of each item's name and price at the moment it was
+                    placed, so putting a price up next month can't quietly rewrite what last
+                    month's takings were.
                 </p>
             </article>
 
@@ -83,16 +112,16 @@
                     <span>Design and build</span>
                 </div>
                 <div class="project-meta__row">
-                    <span class="project-meta__label">Timeline</span>
-                    <span>Add a date or duration</span>
+                    <span class="project-meta__label">Started</span>
+                    <span>September 2026</span>
                 </div>
                 <div class="project-meta__row">
                     <span class="project-meta__label">Built with</span>
-                    <span>JavaScript, Flexbox</span>
+                    <span>HTML, CSS, JavaScript, Node.js, Express.js</span>
                 </div>
                 <div class="project-meta__row">
                     <span class="project-meta__label">Status</span>
-                    <span>In progress</span>
+                    <span>In development</span>
                 </div>
             </aside>
         </div>
@@ -100,7 +129,7 @@
         <nav class="project-pager" aria-label="Project navigation">
             <a class="project-pager__prev" href="project-one.html">
                 Previous project
-                <strong><span aria-hidden="true">&larr;</span> Project One</strong>
+                <strong><span aria-hidden="true">&larr;</span> First Portfolio Site</strong>
             </a>
             <a class="project-pager__next" href="project-three.html">
                 Next project
